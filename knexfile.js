@@ -3,14 +3,16 @@
 'use strict';
 
 module.exports = {
-  development: {
-    client: 'pg',
-    connection: 'postgres://localhost/bester_db'
-  },
-  testing: {
+    'development': {
+      'client': 'pg',
+      'connection': 'postgres://localhost/bester_db'
+    },
 
-  },
-  production: {
+    'testing': {
+    },
 
-  }
+    'production': {
+      'client': 'pg',
+      'connection': process.env.DATABASE_URL
+    }
 }
