@@ -1,0 +1,16 @@
+// THIS FILE IS DB CONNECTION + ENVIRONMENT DEFS
+
+'use strict';
+
+module.exports = {
+  development: {
+    client: 'pg',
+    connection: 'postgres://localhost/bester_db'
+  },
+  testing: {
+
+  },
+  production: {
+
+  }
+}
